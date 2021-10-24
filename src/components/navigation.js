@@ -7,7 +7,7 @@ class Navigation extends Component{
     render(){
         let menuContent = this.props.menuItems.filter((item)=>item.navItem).map((item,idx)=>{
             return <Nav.Item key={idx}>
-                <Link to={item.path} className="nav-link fw-bold text-light-brw">
+                <Link to={item.path} className="nav-link fw-bold text-light">
                     {item.name}
                 </Link>
             </Nav.Item>;
