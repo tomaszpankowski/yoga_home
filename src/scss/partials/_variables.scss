@@ -1,0 +1,13 @@
+$prefix: "../../";
+$bg__error-img: $prefix+"img/error.jpg";
+$bg__comingsoon-img: $prefix+"img/coming.jpg";
+$bg__privacy-img: $prefix+"img/privacy.jpg";
+$bg__init:
+    "error",
+    "comingsoon",
+    "privacy";
+$classes_init:
+    $bg__error-img,
+    $bg__comingsoon-img,
+    $bg__privacy-img;
+$footer-height: 57px;
