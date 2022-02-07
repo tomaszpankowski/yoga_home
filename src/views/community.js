@@ -1,17 +1,17 @@
 import React,{Component} from "react";
 import Container from "../../node_modules/react-bootstrap/Container";
-import ReviewsS1 from "../components/reviews-s1";
-import ReviewsS2 from "../components/reviews-s2";
+import CommunityS1 from "../components/community-s1";
+import CommunityS2 from "../components/community-s2";
 
-class Reviews extends Component{
+class Community extends Component{
     render(){
         return(        
             <Container fluid className="minh-footer-adj p-0">
-                <ReviewsS1/>
-                <ReviewsS2/>
+                <CommunityS1/>
+                <CommunityS2/>
             </Container>    
         );
     }
 }
 
-export default Reviews;
+export default Community;
