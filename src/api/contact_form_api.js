@@ -18,7 +18,7 @@ let contactFormApi = {
         formData.append("msgcount",(messageCounterA==="" && Number.isInteger(messageCounterA))?0:messageCounterA);
         return formData;
     },
-    sendData(backNavA,dataA,getCookieA,MSG_LINK){
+    sendData(backNavA,dataA,setCookieA,MSG_LINK){
         fetch(MSG_LINK,{
             method:"POST",
             body:dataA
@@ -27,7 +27,7 @@ let contactFormApi = {
         .then((data)=>{
             if(data["msgcount"]!==undefined
             && !isNaN(data["msgcount"])){                    
-                getCookieA("msgcount",data.msgcount,2);
+                setCookieA("msgcount",data.msgcount,2);
                 backNavA("confirm");
             }
         }).catch((error)=>{
