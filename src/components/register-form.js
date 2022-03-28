@@ -85,13 +85,13 @@ class RegisterForm extends Component{
 
     render(){
         return(        
-            <Container fluid className={"register-form align-items-center p-0 py-5 d-flex minh-100vh "+this.props.classExt}>
+            <Container fluid className={"contact-s2 align-items-center p-0 py-5 d-flex minh-100vh "+this.props.classExt}>
                 <Row className="mx-auto text-start w-100 pt-5">
                     <Col xs={11} md={6} lg={5} className="mx-auto p-0 d-flex align-items-center">
-                        <Form className="text-start w-100 border border-dark-gray p-4 rounded bg-form shadow text-secondary opacity-9 fw-bold z-index-10"
+                        <Form className="text-start w-100 border border-secondary p-4 rounded bg-light shadow text-secondary opacity-9 fw-bold"
                             autoComplete="off"
                             method="POST">
-                            <div className="border-bottom border-dark-gray mb-4">
+                            <div className="border-bottom border-secondary mb-4">
                                 <p className="font-weight-bold mb-1">
                                     Register user
                                 </p>
@@ -100,7 +100,7 @@ class RegisterForm extends Component{
                                 <Form.Label>First Name</Form.Label>
                                  <Form.Control type="text" 
                                     placeholder="Enter first name" 
-                                    className="rounded-pill border-dark-gray text-secondary"
+                                    className="rounded-pill border-secondary text-secondary"
                                     maxLength="50"
                                     name="firstName"
                                     onChange={this.updateUserData.bind(this)} 
@@ -111,7 +111,7 @@ class RegisterForm extends Component{
                                 <Form.Label>Last Name</Form.Label>
                                  <Form.Control type="text" 
                                     placeholder="Enter last name" 
-                                    className="rounded-pill border-dark-gray text-secondary"
+                                    className="rounded-pill border-secondary text-secondary"
                                     maxLength="50"
                                     name="lastName"
                                     onChange={this.updateUserData.bind(this)} 
@@ -122,7 +122,7 @@ class RegisterForm extends Component{
                                 <Form.Label>Email</Form.Label>
                                  <Form.Control type="text" 
                                     placeholder="Enter email" 
-                                    className="rounded-pill border-dark-gray text-secondary"
+                                    className="rounded-pill border-secondary text-secondary"
                                     maxLength="50"
                                     name="emailAddr"
                                     onChange={this.updateUserData.bind(this)} 
@@ -133,7 +133,7 @@ class RegisterForm extends Component{
                                 <Form.Label>Login</Form.Label>
                                  <Form.Control type="text" 
                                     placeholder="Enter login" 
-                                    className="rounded-pill border-dark-gray text-secondary"
+                                    className="rounded-pill border-secondary text-secondary"
                                     maxLength="50"
                                     name="userLogin"
                                     onChange={this.updateUserData.bind(this)} 
@@ -144,7 +144,7 @@ class RegisterForm extends Component{
                                 <Form.Label>Password</Form.Label>
                                 <Form.Control type="password" 
                                     placeholder="Enter password" 
-                                    className="rounded-pill border-dark-gray text-secondary"
+                                    className="rounded-pill border-secondary text-secondary"
                                     maxLength="40"
                                     name="userPass"
                                     onChange={this.updateUserData.bind(this)} 
@@ -155,7 +155,7 @@ class RegisterForm extends Component{
                                 <Form.Label>Password (repeat)</Form.Label>
                                 <Form.Control type="password" 
                                     placeholder="Repeat password" 
-                                    className="rounded-pill border-dark-gray text-secondary"
+                                    className="rounded-pill border-secondary text-secondary"
                                     maxLength="40"
                                     name="userPassConfirm"
                                     onChange={this.updateUserData.bind(this)} 
@@ -170,7 +170,7 @@ class RegisterForm extends Component{
                                     </Link>
                                 </p>
                             </div>
-                            <div className="w-100 text-end py-2 border-top border-dark-gray">
+                            <div className="w-100 text-end py-2 border-top border-secondary">
                                 <Button 
                                     variant="outline-secondary" 
                                     type="reset" 

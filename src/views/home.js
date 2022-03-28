@@ -5,7 +5,7 @@ import IndexS1 from "../components/index-s1";
 class Home extends Component{
     render(){
         return(        
-            <Container fluid className="minh-footer-adj p-0">
+            <Container fluid className="minh-footer-adj index-s1 p-0">
                 <IndexS1/>
             </Container>    
         );

@@ -1,1 +1,73 @@
 @include aoa-bg-series($bg__init,$classes_init);
+
+.text{
+    &-shadow{
+        text-shadow: $text__shadow;
+    }
+}
+
+nav{
+    z-index: 10;
+}
+
+textarea{
+    resize: none;
+}
+
+@media all and (max-width: 767px){
+    .about{
+        &-s1,&-s2,&-s3{
+            *{
+                color: #fff !important;
+                text-shadow: $text__shadow;
+            }
+            background-color: #666!important;
+            background-blend-mode: multiply!important;
+        }
+        &-s1,&-s3{
+            background-position: right!important;
+        }
+    }
+    .blog,.contact,.index,.reviews{
+        &-s1{
+            *{
+                color: #fff !important;
+                text-shadow: $text__shadow;
+            }
+            background-color: #666!important;
+            background-blend-mode: multiply!important;
+        }
+    }
+    .blog,.reviews{
+        &-s1{
+            background-position: right!important;
+        }
+    }
+    .community{
+        &-s1,&-s2{
+            *{
+                color: #fff !important;
+                text-shadow: $text__shadow;
+            }
+            background-color: #666!important;
+            background-blend-mode: multiply!important;
+        }
+        &-s1{
+            background-position: right!important;
+        }
+    }
+    .navbar{
+        &-nav{
+            *{
+                &:hover{
+                    opacity: 0.8;
+                }
+                color: #fff !important;
+                text-shadow: $text__shadow;
+            }
+            background-color: #666!important;
+            background-blend-mode: multiply!important;
+            opacity:0.9;
+        }
+    }
+}
