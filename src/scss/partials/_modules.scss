@@ -1,5 +1,39 @@
 @include aoa-bg-series($bg__init,$classes_init);
 
+.about{
+    &-s1{
+        background-position-x: center!important;
+    }
+    &-s2{
+        background-position-x: center!important;
+    }
+    &-s3{
+        background-position-x: right!important;
+    }
+}
+.blog{
+    &-s1{
+        background-position-x: center!important;
+    }
+}
+.community{
+    &-s1{
+        background-position-x: right!important;
+    }
+    &-s2{
+        background-position-x: center!important;
+    }
+}
+.index{
+    &-s1{
+        background-position-x: 38%!important
+    }
+}
+.reviews{
+    &-s1{
+        background-position-x: center!important;
+    }
+}
 .text{
     &-shadow{
         text-shadow: $text__shadow;
